@@ -4,8 +4,8 @@ import { useEffect } from "react";
 
 
 export default function Home() {
-  const query = new URLSearchParams(location.search);
-  const provider = query.get('provider') || 'facebook';
+
+  const provider = 'facebook';
 
   useEffect(() => {
     document.cookie = `provider=${provider}; path=/`;
